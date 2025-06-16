@@ -16,5 +16,24 @@ A .NET class library that provides Redis-based full-text search capabilities usi
 
 ### 1. Install the NuGet Package
 
+🧱 Dependencies
+StackExchange.Redis
+
+RedisJSON / RediSearch
+
+Microsoft.Extensions.Logging
+
+Microsoft.Extensions.Configuration
+
+
 ```bash
 dotnet add package RedisSearchService
+```
+👨‍💻 Contributing
+Fork the repo
+
+Create a feature branch (git checkout -b feature/your-feature)
+
+Commit your changes
+
+Open a Pull Request
