@@ -29,6 +29,16 @@ Microsoft.Extensions.Configuration
 ```bash
 dotnet add package RedisSearchService
 ```
+🔹 3. In the main app, configure it from appsettings.json or environment:
+```json
+{
+  "Redis": {
+    "Server": "localhost:6379",
+    "PoolSize": 8,
+    "Strategy": "LeastLoaded"
+  }
+}
+```
 👨‍💻 Contributing
 Fork the repo
 
