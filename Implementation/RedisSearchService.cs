@@ -1,17 +1,12 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using RedisSearch.Exceptions;
+using RedisSearch.Helper;
 using RedisSearch.Interfaces;
 using StackExchange.Redis;
 using StackExchange.Redis.MultiplexerPool;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
 using System.Text.Json;
-using System.Threading.Tasks;
-using RedisSearch.Helper;
-using RedisSearch.Exceptions;
+using System.Text.Json.Serialization;
 
 namespace RedisSearch.Implementation
 {
