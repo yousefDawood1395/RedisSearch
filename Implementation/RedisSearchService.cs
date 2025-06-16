@@ -14,7 +14,7 @@ namespace RedisSearch.Implementation
                                     IConnectionMultiplexerPool _connectionPool,
                                     ILogger<RedisSearchService> _logger) : IRedisSearchService
     {
-
+        #region Implementation
         public async Task<(int totalCount, List<TOUT> results)> Search<TOUT>(string indexName, string query, int offset = 0, int limit = 10, string sortBy = "", string order = "ASC") where TOUT : class
         {
             try
@@ -111,5 +111,7 @@ namespace RedisSearch.Implementation
                 throw new Exception(ex.Message);
             }
         }
+        #endregion
+
     }
 }
